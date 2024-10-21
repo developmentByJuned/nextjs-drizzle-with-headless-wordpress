@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node backend/migrate.js && next build",
+    "build": "npm run migrate && next build",
+    "migrate": "node backend/migrate.js",
     "start": "next start",
     "lint": "next lint"
   },
